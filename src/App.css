@@ -1,0 +1,558 @@
+.nav{
+    width: 100%;
+    height: 134px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+  
+  
+    hr{
+      width: 100%;
+      height: 3px;
+      background-color: rgb(195, 195, 195);
+    }
+    .down{
+      width: 100%;
+      height: 87px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  
+      .block_dow{
+        
+        width: 50%;
+        height: 87px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+  
+        img{
+          width: 159px;
+          height: 54px;
+        }
+    
+        h1{
+          width: 320px;
+          height: 24px;
+          color: #b99470;
+          font-size: 25px;
+          cursor: pointer;
+    
+        }
+      }
+      
+    }
+  }
+  
+  .img_main{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://navruzhotel.uz/_nuxt/img/bg2.b0e2d51.jpg);
+  
+    .main_blocks{
+      width: 60%;
+      height: 441px;
+  
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+  
+      .first{
+        width: 50%;
+        height: 441px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+  
+        h1{
+          width: 300px;
+          color: #fff;
+        }
+        button{
+          width: 228px;
+          height: 48px;
+          background-color: #b99470;
+          color: #fff;
+          border: none !important;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 20px;
+        }
+        button:hover{
+          background-color: gold;
+        }
+      }
+      .second{
+        width: 50%;
+        height: 441px;
+        display: flex;
+        justify-content: end;
+  
+        .block_sec{
+          width: 276px;
+          height: 378px;
+          background-color: #fff;
+        }
+  
+        .text_sec{
+          width: 100%;
+          height: 30%;
+          /* display: flex;
+          flex-direction: column; */
+  
+  
+          h2{
+            width: 100%;
+            height: 43px;
+          }
+          span{
+            width: 100%;
+            height: 40px;
+            font-size: 15px;
+          }
+  
+        }
+        .inp_sec{
+          width: 100%;
+          height: 55%;
+          display: flex;
+          flex-direction: column;
+          row-gap: 20px;
+          align-items: center;
+          justify-content: center;
+  
+          .bor{
+            width: 90%;
+            height: 50px;
+            border: 1px solid rgb(199, 199, 199);
+            display: flex;
+          }
+          .text_bor{
+            width: 50%;
+            height: 50px;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* flex-direction: column; */
+  
+            input{
+              border: none !important;
+              outline: none;
+            }
+
+            span{
+              width: 100%;
+              height: 0px;
+  
+            }
+          }
+          .icn_bor{
+            width: 50%;
+            height: 50px;
+            font-size: 20px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            color: #b99470;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  
+  .main_about{
+    width: 100%;
+    height: 970px;
+
+    .main_text_ab{
+        width: 100%;
+        height: 80px;
+
+
+
+        .line{
+            width: 100px;
+            height: 5px;
+            background-color: black;
+        }
+    }
+
+    .two_blocks{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: space-between;
+
+
+        .text_block{
+            width: 60%;
+            height: 820px;
+
+            h1{
+                color: #b99470;
+            }
+
+            .span_text{
+                display: flex;
+                flex-direction: column;
+                row-gap: 40px;
+                font-size: 25px;
+            }
+
+            
+        }
+        .img_block_tw{
+            width: 40%;
+            height: 820px;
+            display: flex;
+            
+            
+
+            img{
+                width: 500px;
+                height: 500px;
+            }
+        }
+
+    }
+    .more{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+
+        gap: 10px;
+        cursor: pointer;
+        transition: transform 0.8s ease;
+        color: #b99470;
+    }
+    .icon_more{
+        color: #b99470;
+    }
+
+    .more:hover{
+        .icon_more{
+            transform: translateX(20px);
+        }
+    }
+
+
+    .blocks_info{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .block_in{
+            width: 60%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+
+            .fir_bl{
+                width: 30%;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                h3{
+                    width: 200px;
+                    color: #b99470;
+                }
+            }
+        }
+
+    }
+  }
+
+
+  .number{
+    width: 100%;
+    height: 400px;
+
+
+    .text_num{
+        width: 100%;
+        height: 20%;
+
+
+        .line_num{
+            width: 100px;
+            height: 5px;
+            background-color: black;
+        }
+    }
+
+    .blocks_num{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        .fir_bl{
+            width: 234px;
+            height: 296px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+            color: #b99470;
+
+            .line_bl{
+                width: 100px;
+                height: 3px;
+                background-color: #b99470;
+            }
+            img{
+                width: 234px;
+                height: 181px;
+
+            }
+
+        }
+    }
+
+  }
+
+
+  .guests{
+    width: 100%;
+    height: 700px;
+    
+    .text_gt{
+        width: 100%;
+        height: 15%;
+    
+        .line_gt{
+            width: 100px;
+            height: 5px;
+            background-color: black;
+        }
+
+    }
+
+    .blocks_gt{
+        width: 100%;
+        height: 90%;
+
+
+        .line1{
+            width: 100%;
+            height: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+
+            .fir_bg{
+                width: 380px;
+                height: 253px;
+                display: flex;
+                justify-content: center;
+                align-items: center;  
+                color: #fff;
+                cursor: pointer;
+
+                border-radius: 20px;
+                background-image: url(https://navruzhotel.uz/_nuxt/img/restoran1.3096ed8.jpg);
+                background-size: 380px;
+            }
+            .fir_bg2{
+              width: 380px;
+              height: 253px;
+              display: flex;
+              justify-content: center;
+              align-items: center;  
+              color: #fff;
+              cursor: pointer;
+
+              border-radius: 20px;
+              background-image: url(	https://navruzhotel.uz/_nuxt/img/bar13.c55439e.jpg);
+              background-size: 380px;
+          }
+          .fir_bg3{
+            width: 380px;
+            height: 253px;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            color: #fff;
+            cursor: pointer;
+
+            border-radius: 20px;
+            background-image: url(https://navruzhotel.uz/_nuxt/img/conference2.c46191e.jpg );
+            background-size: 380px;
+        }
+            .fir_bg:hover{
+              h1{
+                transform: translateX(90px);
+                display: none;
+              }
+            }
+            .fir_bg2:hover{
+              h1{
+                transform: translateX(90px);
+                display: none;
+              }
+            }
+            .fir_bg3:hover{
+              h1{
+                transform: translateX(90px);
+                display: none;
+              }
+            }
+
+        }
+
+        .line2{
+          width: 100%;
+            height: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+
+            .sec_bg{
+              width: 380px;
+              height: 253px;
+              display: flex;
+              justify-content: center;
+              align-items: center;  
+              color: #fff;
+              cursor: pointer;
+
+              border-radius: 20px;
+              background-image: url(https://navruzhotel.uz/_nuxt/img/pool1.2f02c34.jpg);
+              background-size: 380px;
+          }
+          .sec_bg2{
+            width: 380px;
+            height: 253px;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            color: #fff;
+            cursor: pointer;
+
+            border-radius: 20px;
+            background-image: url(https://navruzhotel.uz/_nuxt/img/gym1.77c1917.jpg);
+            background-size: 380px;
+        }
+        .sec_bg3{
+          width: 380px;
+          height: 253px;
+          display: flex;
+          justify-content: center;
+          align-items: center;  
+          color: #fff;
+          cursor: pointer;
+
+          border-radius: 20px;
+          background-image: url(	https://navruzhotel.uz/_nuxt/img/billiard1.e9196d7.jpg );
+          background-size: 380px;
+      }
+          .sec_bg:hover{
+            h1{
+              transform: translateX(90px);
+              display: none;
+            }
+          }
+          .sec_bg2:hover{
+            h1{
+              transform: translateX(90px);
+              display: none;
+            }
+          }
+          .sec_bg3:hover{
+            h1{
+              transform: translateX(90px);
+              display: none;
+            }
+          }
+
+        }
+
+    }
+  }
+
+  .guest_ab{
+    width: 100%;
+    height: 700px;
+
+
+    .text_gtab{
+      width: 100%;
+      height: 15%;
+  
+      .line_gtab{
+          width: 100px;
+          height: 5px;
+          background-color: black;
+      }
+
+  }
+
+  .carusel{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+
+    .block_car{
+      width: 25%;
+      height: 216px;
+      box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+
+      .up_car{
+        width: 90%;
+        height: 32%;
+        display: flex;
+        padding: 0 20px;
+
+        font-size: 20px;
+        img{
+          border-radius: 100%;
+        }
+      }
+
+      .down_car{
+        width: 90%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        font-size: 25px;
+      }
+    }
+  }
+
+  }
+
+  .cart{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
