@@ -1,8 +1,11 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import './Nav.css';
 
+
 const Navbar = () => {
+
+    
+
     return (
         <div className='nav'>
         <nav>
@@ -10,17 +13,18 @@ const Navbar = () => {
             <ul>
                 <li><Link to="/App">Главная</Link></li>
                 <li><Link to="/Bron">Бронирование</Link></li>
-                <li>О нас</li>
-                <li>Номера</li>
-                <li>Удобства</li>
-                <li>Новости</li>
-                <li>Контакты</li>
-                <li>Меню</li>
+                <li><Link to="/About">О нас</Link> </li>
+                <li><Link to="/Number">Номера</Link></li>
+                <li><Link to="/Comfort">Удобства</Link></li>
+                <li><Link to="/New">Новости</Link></li>
+                <li><Link to="/Call">Контакты</Link></li>
+                <li><Link to="/Menu">Меню</Link></li>
             </ul>
             </div>
         </nav>
+        
         </div>
     )
 }
 
-export default Navbar
+export default Navbar;

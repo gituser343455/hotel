@@ -1,0 +1,233 @@
+hr{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(195, 195, 195);
+  }
+.down{
+    width: 100%;
+    height: 87px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .block_dow{
+      
+      width: 50%;
+      height: 87px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      img{
+        width: 159px;
+        height: 54px;
+      }
+  
+      h1{
+        width: 320px;
+        height: 24px;
+        color: #b99470;
+        font-size: 25px;
+        cursor: pointer;
+  
+      }
+    }
+    
+  }
+
+
+  .img_main_br{
+    width: 100%;
+    height: 400px;
+
+
+    img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    
+    }
+  }
+
+
+  .text_main{
+    width: 100%;
+    height: 80px;
+    color: #b99470;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+
+    span{
+        color: black;
+        font-size: 20px;
+    }
+
+    button{
+        width: 228px;
+        height: 48px;
+        background-color: #b99470;
+        color: #fff;
+        border: none !important;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        margin: 30px 0;
+      }
+      button:hover{
+        background-color: gold;
+      }
+  }
+
+
+  .blocks_gt{
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+
+
+    .line1{
+        width: 100%;
+        height: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+
+        .fir_bg{
+            width: 380px;
+            height: 253px;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            color: #fff;
+            cursor: pointer;
+
+            border-radius: 20px;
+            background-image: url(https://navruzhotel.uz/_nuxt/img/salads.51bccc9.jpg);
+            background-size: 380px;
+        }
+        .fir_bg2{
+          width: 380px;
+          height: 253px;
+          display: flex;
+          justify-content: center;
+          align-items: center;  
+          color: #fff;
+          cursor: pointer;
+
+          border-radius: 20px;
+          background-image: url(https://navruzhotel.uz/_nuxt/img/appetizers.72bfcbe.jpg);
+          background-size: 380px;
+      }
+      .fir_bg3{
+        width: 380px;
+        height: 253px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        color: #fff;
+        cursor: pointer;
+
+        border-radius: 20px;
+        background-image: url(https://navruzhotel.uz/_nuxt/img/soups.4af96d0.jpg );
+        background-size: 380px;
+    }
+        .fir_bg:hover{
+          h1{
+            transform: translateX(90px);
+            display: none;
+          }
+        }
+        .fir_bg2:hover{
+          h1{
+            transform: translateX(90px);
+            display: none;
+          }
+        }
+        .fir_bg3:hover{
+          h1{
+            transform: translateX(90px);
+            display: none;
+          }
+        }
+
+    }
+
+    .line2{
+      width: 100%;
+        height: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+
+        .sec_bg{
+          width: 380px;
+          height: 253px;
+          display: flex;
+          justify-content: center;
+          align-items: center;  
+          color: #fff;
+          cursor: pointer;
+
+          border-radius: 20px;
+          background-image: url(https://navruzhotel.uz/_nuxt/img/pasta.7267c8c.jpg);
+          background-size: 380px;
+      }
+      .sec_bg2{
+        width: 380px;
+        height: 253px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        color: #fff;
+        cursor: pointer;
+
+        border-radius: 20px;
+        background-image: url(https://navruzhotel.uz/_nuxt/img/plov.c22a71f.jpg);
+        background-size: 380px;
+    }
+    .sec_bg3{
+      width: 380px;
+      height: 253px;
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      color: #fff;
+      cursor: pointer;
+
+      border-radius: 20px;
+      background-image: url(https://navruzhotel.uz/_nuxt/img/fish.e880cd2.jpg);
+      background-size: 380px;
+  }
+      .sec_bg:hover{
+        h1{
+          transform: translateX(90px);
+          display: none;
+        }
+      }
+      .sec_bg2:hover{
+        h1{
+          transform: translateX(90px);
+          display: none;
+        }
+      }
+      .sec_bg3:hover{
+        h1{
+          transform: translateX(90px);
+          display: none;
+        }
+      }
+
+    }
+
+}

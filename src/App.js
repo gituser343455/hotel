@@ -3,36 +3,15 @@ import './App.css';
 import {addDoc, collection } from '@firebase/firestore'
 import { firestore } from './firebase';
 
-import React, { useState, useEffect, useRef } from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
+import React, { useRef } from 'react';
+
 import { FaCalendarAlt } from "react-icons/fa";
 import { MdPerson } from "react-icons/md";
 import { SlArrowRight } from "react-icons/sl";
-// import { initializeApp } from "firebase/app";
+
+
 
 function App() {
-  const [location, setLocation] = useState({ lat: 0, lng: 0 });
-
-  useEffect(() => {
-    const fetchLocation = async () => {
-      try {
-        const response = await fetch('https://ipinfo.io/json?token=82.215.73.220');
-        if (!response.ok) {
-          throw new Error('Failed to fetch location');
-        }
-        const data = await response.json();
-        const [lat, lng] = data.loc.split(',').map(parseFloat);
-        setLocation({ lat, lng });
-      } catch (error) {
-        // console.error('Error fetching location:', error);
-      }
-    };
-
-    fetchLocation();
-  }, []);
-
-
 
   const massege = useRef();
   const ref = collection(firestore,"massages")
@@ -47,12 +26,13 @@ function App() {
     try{
       addDoc(ref,data);
       alert("Ваши данные отправлины в Firebase")
+      
     }
     catch(e){
       console.log(e);
     }
+    
   }
-
 
 
   return (
@@ -86,9 +66,11 @@ function App() {
                 <div className="block_inp1 bor">
                   <div className="text_bor">
                     <span>Заезд</span>
-                    {/* <h4>06.04.2024</h4> */}
 
-                    <input type="text" placeholder='Заезд ?' ref={massege}/>
+                    <input 
+                      type="text" 
+                      placeholder='Заезд ?' 
+                      ref={massege}/>
 
                   </div>
                   <div className="icn_bor">
@@ -99,7 +81,7 @@ function App() {
                 <div className="text_bor">
                     <span>Заезд</span>
                     {/* <h4>07.04.2024</h4> */}
-                    <input type="text" placeholder='Выезд ?' ref={massege} />
+                    <input type="text" placeholder='Выезд ?' ref={massege}/>
 
                   </div>
                   <div className="icn_bor">
@@ -109,8 +91,9 @@ function App() {
                 <div className="block_inp3 bor">
                 <div className="text_bor">
                     <span>Гости</span>
-                    {/* <h4>2 взрослых,0 детей</h4> */}
+
                     <input type="text" placeholder='Сколько детей ?' ref={massege} />
+
 
                   </div>
                   <div className="icn_bor">
@@ -291,12 +274,11 @@ function App() {
             </div>
       </div>
       <div className="cart">
-          <MapContainer center={[location.lat, location.lng]} zoom={13} style={{ height: '400px', width: '900px' }}>
-        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' />
-        <Marker position={[location.lat, location.lng]}>
-        <Popup>You are here</Popup>
-        </Marker>
-        </MapContainer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.819353247629!2d69.28727522870963!3d41.33454138105029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bf49b954dd3%3A0x8b6b32b227cbe29e!2sNavruz%20Hotel%20Tashkent!5e0!3m2!1sru!2s!4v1712723592585!5m2!1sru!2s"
+         width="70%" height="450" 
+          allowfullscreen=""
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       </div>
     </div>
